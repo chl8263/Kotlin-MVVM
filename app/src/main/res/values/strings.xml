@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SeoulHeartRescue</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="profile">"Profile"</string>
+    <string name="setting">"Setting"</string>
+    <string name="education">"Education"</string>
+
+
+    <!--guide-->
+    <string name="msg_quit">"Pressing the "back" button ends."</string>
+</resources>
