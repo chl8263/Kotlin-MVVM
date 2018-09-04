@@ -17,8 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.MainActivity"
-            android:launchMode="singleTask"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.activity.LoginActivity"
+            android:theme="@style/LoginTheme"
+            />
+        <activity android:name=".ui.activity.JoinActivity" />
+        <activity android:name=".ui.dialog.LodingDIalog"></activity>
     </application>
 
 </manifest>

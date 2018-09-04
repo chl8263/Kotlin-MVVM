@@ -5,6 +5,7 @@ import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
 import com.example.gyun_home.seoulheartrescue.util.ToastMake
 import com.example.gyun_home.seoulheartrescue.viewmodel.EducationViewModel
@@ -40,6 +41,7 @@ open class BaseActivity : AppCompatActivity() {
 
         }
     }
+
 
     override fun onPause() {
         super.onPause()

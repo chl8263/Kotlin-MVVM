@@ -47,5 +47,13 @@ class StartActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             context.startActivity(intent)
         }
+
+        fun startStack(context : Context , intent: Intent , isFinish: Boolean){
+            if(isFinish){
+                if(context is Activity)
+                    context.finish()
+            }
+            context.startActivity(intent)
+        }
     }
 }
