@@ -135,7 +135,7 @@ class ScheduleFragment : Fragment() {
 
         })
 
-        result.add("2018,09,18")
+        result.add("2018,9,18")
         result.add("2018,10,12")
         result.add("2018,10,19")
         result.add("2018,10,24")

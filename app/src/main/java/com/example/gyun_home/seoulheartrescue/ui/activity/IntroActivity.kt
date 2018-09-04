@@ -57,7 +57,7 @@ class IntroActivity : BaseActivity() {
                                     .createSignInIntentBuilder()
                                     .setLogo(R.drawable.ic_launcher_foreground)
                                     .setAvailableProviders(providers)
-                                    .setTheme(R.style.LoginTheme)
+                                    .setTheme(R.style.AppTheme)
                                     .build(),
                             RC_SIGN_IN)
                 }))
