@@ -10,6 +10,8 @@
     <string name="profile">"Profile"</string>
     <string name="setting">"Setting"</string>
     <string name="education">"Education"</string>
+    <string name="educationSchedule">"Schedule"</string>
+    <string name="history">"History"</string>
 
 
     <!--guide-->

@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
-    <data class="EducationBinding">
+    <data class="HistoryBinding">
 
         <import type="android.view.View" />
 
         <variable
             name="model"
-            type="com.example.gyun_home.seoulheartrescue.viewmodel.EducationViewModel" />
+            type="com.example.gyun_home.seoulheartrescue.viewmodel.HistoryViewModel" />
     </data>
 
 
@@ -22,7 +22,7 @@
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:text="@string/education"
+            android:text="@string/history"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_educationSchedule"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/educationSchedule" />
+    <item
         android:id="@+id/navigation_education"
         android:icon="@drawable/ic_local_library_black_24dp"
         android:title="@string/education" />
@@ -10,7 +14,10 @@
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_person_black_24dp"
         android:title="@string/profile" />
-
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/ic_medical_history"
+        android:title="@string/history" />
     <item
         android:id="@+id/navigation_setting"
         android:icon="@drawable/ic_settings_black_24dp"

@@ -12,10 +12,8 @@ import android.view.MenuItem
 import com.example.gyun_home.seoulheartrescue.BaseActivity
 import com.example.gyun_home.seoulheartrescue.R
 import com.example.gyun_home.seoulheartrescue.databinding.MainBinding
+import com.example.gyun_home.seoulheartrescue.ui.fragment.*
 
-import com.example.gyun_home.seoulheartrescue.ui.fragment.EducationFragment
-import com.example.gyun_home.seoulheartrescue.ui.fragment.ProfileFragment
-import com.example.gyun_home.seoulheartrescue.ui.fragment.SettingFragment
 import com.example.gyun_home.seoulheartrescue.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -46,20 +44,26 @@ class MainActivity : BaseActivity() {
     var navigationItemSelectedListener: BottomNavigationView.OnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
         menuItem ->
         when(menuItem.itemId){
+            R.id.navigation_educationSchedule -> {
+
+                replaceFragment(ScheduleFragment.newInstance())
+                return@OnNavigationItemSelectedListener true
+            }
             R.id.navigation_education -> {
-                Log.e("aaa","aaa")
 
                 replaceFragment(EducationFragment.newInstance())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_profile -> {
-                Log.e("aaa","aaa")
 
                 replaceFragment(ProfileFragment.newInstance())
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_history -> {
+                replaceFragment(HistoryFragment.newInstance())
+                return@OnNavigationItemSelectedListener true
+            }
             R.id.navigation_setting -> {
-                Log.e("aaa","aaa")
                 replaceFragment(SettingFragment.newInstance())
                 return@OnNavigationItemSelectedListener true
             }

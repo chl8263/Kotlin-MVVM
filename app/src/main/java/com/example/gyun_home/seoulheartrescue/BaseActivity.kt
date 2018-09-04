@@ -8,10 +8,7 @@ import android.util.Log
 import android.view.MotionEvent
 import android.view.inputmethod.InputMethodManager
 import com.example.gyun_home.seoulheartrescue.util.ToastMake
-import com.example.gyun_home.seoulheartrescue.viewmodel.EducationViewModel
-import com.example.gyun_home.seoulheartrescue.viewmodel.MainViewModel
-import com.example.gyun_home.seoulheartrescue.viewmodel.ProfileViewModel
-import com.example.gyun_home.seoulheartrescue.viewmodel.SettingViewModel
+import com.example.gyun_home.seoulheartrescue.viewmodel.*
 import io.reactivex.disposables.CompositeDisposable
 
 open class BaseActivity : AppCompatActivity() {
@@ -23,6 +20,8 @@ open class BaseActivity : AppCompatActivity() {
     var profileViewModel : ProfileViewModel? = null
     var settingViewModel  : SettingViewModel? = null
     var educationViewModel : EducationViewModel? = null
+    var scheduleViewModel : ScheduleViewModel? = null
+    var historyViewModel : HistoryViewModel? = null
 
     val TIME_INTERVAL: Int = 2000
     var mBackpressed : Long? = 0L
@@ -76,6 +75,18 @@ open class BaseActivity : AppCompatActivity() {
             mainViewModel = MainViewModel(this)
         }
         return mainViewModel as MainViewModel
+    }
+    fun get_ScheduleViewModel() : ScheduleViewModel{
+        if (scheduleViewModel == null) {
+            scheduleViewModel = ScheduleViewModel(this)
+        }
+        return scheduleViewModel as ScheduleViewModel
+    }
+    fun get_HistoryViewModel() : HistoryViewModel{
+        if (historyViewModel == null) {
+            historyViewModel = HistoryViewModel(this)
+        }
+        return historyViewModel as HistoryViewModel
     }
     fun get_EducationViewModel() : EducationViewModel{
         if (educationViewModel == null) {
